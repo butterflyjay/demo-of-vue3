@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./assets/js/lottie.min.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="app"></div>
+  </body>
+  <script type="module">
+    import { wechatPage } from "./components/wechatpage.js";
+    const app = Vue.createApp({
+      components: {
+        "wechat-page": wechatPage,
+      },
+      template: `
+            <wechat-page></wechat-page>
+        `,
+      data() {
+        return {};
+      }
+    });
+    const vm = app.mount("#app");
+  </script>
+</html>

@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,700&display=swap");
+
+html {
+  font-size: 10px;
+  font-family: "Muli", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#app {
+  height: 100vh;
+}
+.container {
+  border: 3px solid black;
+  border-radius: 2rem;
+  height: 40rem;
+  width: 70rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+.code-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.code[type="number"] {
+  height: 120px;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 75px;
+  caret-color: transparent; /*定义插入光标的颜色*/
+  border: 1px solid #eee;
+  text-align: center;
+}
+.code[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+.code[type="number"]::-webkit-inner-spin-button,
+.code[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.code:valid {
+  border-color: #3498db;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+}
+.info {
+  background-color: rgb(212, 211, 211);
+  width: 40rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+.container p {
+  text-align: center;
+}
